@@ -1,0 +1,23 @@
+context:
+  version: "1.0.0"
+
+package:
+  name: q-kx-unit-test
+  version: ${{ version }}
+
+source:
+  path: ..
+  filter:
+    exclude:
+      - recipe/**
+
+build:
+  number: 0
+  noarch: generic
+  script:
+    - mkdir -p $PREFIX/lib/q/mod/kx
+    - cp test.q $PREFIX/lib/q/mod/kx/
+
+tests:
+  - script:
+    - test -f ${PREFIX}/lib/q/mod/kx/test.q

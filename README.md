@@ -12,6 +12,10 @@ This project is a unit testing module that KX will provide open source and out o
 
 :point_right: [`Install guide`](docs/install.md)
 
+## Conda package
+
+For information on how to build and host a conda package see [`Conda usage`](https://github.com/KxSystems/qmamba/wiki/Build)
+
 ## Notice
 
 Copyright (c) 2026 KX Systems, Inc.
